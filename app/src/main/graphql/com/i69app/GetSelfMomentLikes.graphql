@@ -1,0 +1,16 @@
+query GetSelfMomentLikes($momentPk: Int!) {
+    selfMomentLikes(momentPk: $momentPk) {
+        id
+        user
+        {
+            id
+            username
+        }
+        momemt
+        {
+            id
+            momentDescription
+            pk
+        }
+    }
+}

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.i69app">
+
+    <uses-sdk tools:overrideLibrary="com.github.androitandroid" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- For Notification -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DEFAULT_NOTIFICATION_URI" />
+
+    <uses-permission android:name="com.my.app.onMessageReceived" />
+    <uses-permission android:name="moment_added" />
+    <uses-permission android:name="moment_deleted" />
+    <permission android:name="moment_updated" />
+    <permission android:name="story_deleted" />
+    <permission android:name="story_added" />
+
+    <permission android:name="com.my.app.onMessageReceived" />
+    <permission android:name="moment_added" />
+    <permission android:name="moment_deleted" />
+    <permission android:name="moment_updated" />
+    <permission android:name="story_deleted" />
+    <permission android:name="story_added" />
+
+
+    <queries>
+        <intent>
+            <action android:name="com.android.camera.action.CROP" />
+            <data
+                android:mimeType="image/*"
+                android:scheme="content" />
+        </intent>
+    </queries>
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
+        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" /> <!-- allows sharing to Messenger app -->
+    </queries>
+
+    <application
+        android:name=".singleton.App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".ui.screens.SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="fullUser"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.screens.auth.AuthActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.screens.auth.login.WebLoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.screens.main.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullUser"
+            android:windowSoftInputMode="adjustUnspecified"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <!--                <action android:name="match_screen" />-->
+                <!--                <action android:name="schema://message_screen" />-->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.screens.ImagePickerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.screens.interest.add.AddInterestActivity"
+            android:exported="false"
+            android:screenOrientation="fullUser"
+            android:windowSoftInputMode="stateVisible" />
+
+        <activity
+            android:name=".ui.screens.interest.InterestListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.i69app.ui.screens.main.search.userProfile.ImageSliderActivity"
+            android:exported="false"
+            android:screenOrientation="fullUser" />
+
+
+        <activity
+            android:name=".ui.screens.PrivacyOrTermsConditionsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/FullyTranslucent"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+        <service
+            android:name="com.i69app.firebasenotification.MyFirebaseMessagingService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.my.app.onMessageReceived" />
+                <action android:name="gift_Received" />
+                <action android:name="moment_added" />
+                <action android:name="moment_deleted" />
+                <action android:name="moment_updated" />
+                <action android:name="story_deleted" />
+                <action android:name="story_added" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+    </application>
+
+    <queries>
+        <package android:name="com.facebook.katana" />
+    </queries>
+
+</manifest>

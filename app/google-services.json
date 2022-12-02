@@ -1,0 +1,230 @@
+{
+  "project_info": {
+    "project_number": "37873016176",
+    "project_id": "i69app-renewed2022",
+    "storage_bucket": "i69app-renewed2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37873016176:android:2b18b8c003cf6962d943b5",
+        "android_client_info": {
+          "package_name": "com.i69app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37873016176-1nj67u5hk3png039l55f0p0bommggivn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "322d6fb0dff4a2dafda0ba6f1ba9459b1959241d"
+          }
+        },
+        {
+          "client_id": "37873016176-1unq8mkvm2a6rj3rc09nbq6mblrgvk32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "a4b00d75dbaf504f4055c6c491636c34ee7d4051"
+          }
+        },
+        {
+          "client_id": "37873016176-42g5bbsquhjm65uos14d3abjgfqsppoi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "69179ef5504b841a39562da8defe75d640e4ce4c"
+          }
+        },
+        {
+          "client_id": "37873016176-49i7bkd2ul07u2refqle37h9rtm9f5qe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "b5225c1971340c28ffb91488638e82c06a0a667d"
+          }
+        },
+        {
+          "client_id": "37873016176-49v6jujnkh3ckvvpsvssodnh1h3qgmgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "e22c51bde9f4978184a2cb71539fa35df0bc8d1d"
+          }
+        },
+        {
+          "client_id": "37873016176-4kfofascu2qr8j9lhn30ehbnqu6gqmg5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "451d805112c9adb0cbba0f1bf75c9ae1da2a5351"
+          }
+        },
+        {
+          "client_id": "37873016176-6cdbufm73kh2njqfo6p21dfh4v3go49b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "49ea78a6e4fada568a76df29bdec5dd578c4e02e"
+          }
+        },
+        {
+          "client_id": "37873016176-8jun3atthcj3mgn5806niq1qeglt4fjo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "65adbf10814ab078a1f6510a58eb3db1ead4a6d6"
+          }
+        },
+        {
+          "client_id": "37873016176-9mhs30rl0f27qaugdrj5tqpo20pl21tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "f867e8a68504a7f87faca4d4d89763b3f081fc31"
+          }
+        },
+        {
+          "client_id": "37873016176-a4mdr83cvlf9l0k2p08u912jlol50is3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "d5542aa6ef5d7988f6282430ef3cfb855549eeab"
+          }
+        },
+        {
+          "client_id": "37873016176-h5ul3titn0k3hpbosdklmo3juqnkod7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "7b701a859162cfed3b69c8f7f090b339a3b247b4"
+          }
+        },
+        {
+          "client_id": "37873016176-hk8d2ntd8tse5brk23kf4rkdu4u3eokj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "b9fe993dcebc7d684490bcd255bd8b3d60d3d814"
+          }
+        },
+        {
+          "client_id": "37873016176-hoitr0e7o5ho3tenl1fuh5a450ijvq15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "40a9fc8725b21cc5fa6a9d7cd5100d0e6fff99bc"
+          }
+        },
+        {
+          "client_id": "37873016176-ipeu9nn9f5mp31pma7252qsnnu9860pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "a2c32c5f189625178cc5ec21694f038f7d712ba1"
+          }
+        },
+        {
+          "client_id": "37873016176-j7pn9mp93ccv47h9jcpsmt2tvol8ju8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "9262ba82edcb98a88c187b8ecc1a5e67e2393085"
+          }
+        },
+        {
+          "client_id": "37873016176-jn966h9i9mh8n1cc5cb6kagab9dcrg5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "92f6b44695212dbf0775e1fa0b5db8e6e7f2678c"
+          }
+        },
+        {
+          "client_id": "37873016176-o4c6gp9tsimbpfopilh6q1bm1tqf4fsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "b7dfc91fe851c26a356072a490fd0a501e2c6c5f"
+          }
+        },
+        {
+          "client_id": "37873016176-rcddpsihlri0c0lqe02rf4dp45juc4p8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "7931a2641d5f5cd6ac3b5bd15e0bc8017265e2fc"
+          }
+        },
+        {
+          "client_id": "37873016176-t3tf3f178hk4ac31tfb1jgap3ve53805.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "66be1da24f21a1f99c1f8986e07916c93aeec30a"
+          }
+        },
+        {
+          "client_id": "37873016176-tibjdukutribj8gbt90vnot527f2enk1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "0db205f10ed1e9455319e5a1fdc200da221935f1"
+          }
+        },
+        {
+          "client_id": "37873016176-uv5d67ad3jkujoa4hatmrnolf3rqhkio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "807695a506547cda0bff48aca9e67441c412ab16"
+          }
+        },
+        {
+          "client_id": "37873016176-uvsutv750eqp8k0hurpjpvm22ef671ok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "c75e8552b63dd31cbd6fa64716e1dc184350f8ec"
+          }
+        },
+        {
+          "client_id": "37873016176-v7gjeq8n7f3ubjp2ivm2od41nh4mvr28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i69app",
+            "certificate_hash": "8c7c72800fad029e5819960283295f105795d41a"
+          }
+        },
+        {
+          "client_id": "37873016176-m7aloihs6revp8b8ckc9mq0vmf6kk57o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRBSxRdAEpTlqrzIIH2zHcP5bGigmHOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37873016176-b5ev7js2cadnd67ivoavbsji2m81ekee.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "37873016176-flctsu4ivmte6ttcdq90vfr3rqo4anhr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.i69app.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
